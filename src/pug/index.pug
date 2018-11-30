@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title= "Pug Practice"
+    link(href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400" rel="stylesheet")
+    link(href="css/style.css" rel="stylesheet")
+  body
+    div.menu
+      svg.menu__close(viewBox="0 0 50 50" height="15")
+       line(x1="5" y1="5" x2="45" y2="45" stroke-width="10" stroke="#ffffff")
+       line(x1="45" y1="5" x2="5" y2="45" stroke-width="10" stroke="#ffffff")
+      ul.menu__links
+        - var linkz = [{name: "HOME", dest: "#home"}, {name: "ABOUT", dest: "#about"}, {name: "WORK", dest: "#work"}, {name: "SERVICES", dest: "#services"}, {name: "TEAM", dest: "#team"}, {name: "CONTACT", dest: "#contact"}, {name: "LOGIN/LOGOUT", destLogin: "#login", destLogout: "#logout"}]
+        - var isLogin = true
+        - for (var i = 0; i < linkz.length - 1; i++)
+          li.menu__li
+           a.menu__href(href=linkz[i].dest)= linkz[i].name
+        li.menu__li
+         a.menu__href(href=isLogin ? linkz[linkz.length - 1].destLogin : linkz[linkz.length - 1].destLogout)= linkz[linkz.length - 1].name
+      div.menu__contacts
+        p.menu__tel-mail (912)555-1234
+        p.menu__tel-mail office@website.com
+        mixin social(name, target)
+         a(class="menu__social menu__social--"+name href=target)
+        +social("facebook", "https://www.facebook.com/")
+        +social("twitter", "https://twitter.com/")
+        +social("google", "https://plus.google.com/")

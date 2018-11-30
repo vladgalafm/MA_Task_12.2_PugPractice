@@ -1,0 +1,31 @@
+{
+  "name": "12task_part2_pug-practice",
+  "version": "1.0.0",
+  "description": "[Link to GitHub page](https://vladgalafm.github.io/MA_Task_12.2_PugPractice/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladgalafm/MA_Task_12.2_PugPractice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladgalafm/MA_Task_12.2_PugPractice/issues"
+  },
+  "homepage": "https://github.com/vladgalafm/MA_Task_12.2_PugPractice#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pretty-html": "^2.0.9",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1",
+    "node-sass": "^4.10.0"
+  }
+}

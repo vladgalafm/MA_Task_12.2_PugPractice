@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Titillium Web', 'Arial', sans-serif;
+  color: #ffffff;
+}
+
+body {
+  background-color: #ecedee;
+}
+
+.menu {
+  position: absolute;
+  top: 2.5rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  padding: 50px;
+  max-width: 300px;
+  background-color: #565d67;
+}
+
+.menu__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.menu__close line {
+  -webkit-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+
+.menu__close:hover line {
+  stroke: #dddddd;
+}
+
+.menu__li {
+  padding-bottom: 30px;
+  list-style-type: none;
+}
+
+.menu__href {
+  font-size: 1rem;
+  line-height: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+.menu__href:hover {
+  color: #dddddd;
+}
+
+.menu__contacts {
+  padding-top: 35px;
+  border-top: 1px solid #ffffff;
+}
+
+.menu__tel-mail {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 300;
+}
+
+.menu__social {
+  position: relative;
+  margin-top: 30px;
+  margin-right: 10px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+.menu__social::before {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.menu__social--facebook::before {
+  top: 1px;
+  content: "f";
+}
+
+.menu__social--twitter::before {
+  top: 1px;
+  content: "t";
+}
+
+.menu__social--google::before {
+  top: -2px;
+  content: "g";
+}
+
+.menu__social:hover {
+  color: #dddddd;
+  border-color: #dddddd;
+}
